@@ -1,0 +1,67 @@
+@token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTZmNDY5ZWZkNmJjZWMwOTRlMjFhOCIsImlhdCI6MTcyMjY0NzU5MSwiZXhwIjoxNzIzNTExNTkxfQ.gNtRYk2hiXjxOAPZ2dH7lqaxd5XnKywdknuE8y4uiew"
+@baseUrl = http://localhost:4000
+
+### Add Book 1
+POST {{baseUrl}}/books
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "description": "A fantasy novel about the journey of Bilbo Baggins.",
+    "exchangeType": "borrow",
+    "status": "available"
+}
+
+### Add Book 2
+POST {{baseUrl}}/books
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "description": "A novel about racial injustice in the Deep South.",
+    "exchangeType": "borrow",
+    "status": "available"
+}
+
+### Add Book 3
+POST {{baseUrl}}/books
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "title": "1984",
+    "author": "George Orwell",
+    "description": "A dystopian novel about a totalitarian regime.",
+    "exchangeType": "trade",
+    "status": "available"
+}
+
+### Add Book 4
+POST {{baseUrl}}/books
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "description": "A romantic novel about manners and marriage.",
+    "exchangeType": "trade",
+    "status": "available"
+}
+
+### Add Book 5
+POST {{baseUrl}}/books
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "description": "A novel about the American Dream and the Roaring Twenties.",
+    "exchangeType": "borrow",
+    "status": "available"
+}
